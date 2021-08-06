@@ -14,6 +14,10 @@ Returns a list of all exchanges as an array of strings.
 
 Returns a list of all pairs for the given exchange as an array of strings.
 
+### Get `/tickers/:exchange`
+
+Returns all tickers for the given exchange.
+
 ### Get `/ticker/:exchange/:pair`
 
 Returns the ticker for the given exchange and pair. Pair format is `CURRENCYCURRENCY` like `BTCUSD`.
