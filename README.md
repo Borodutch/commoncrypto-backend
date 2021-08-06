@@ -1,24 +1,17 @@
-# Backend starter code
-
-This repository is to be used as a starter for Koa based Node.js applications written in TypeScript and using MongoDB. It includes a range of nice packages and configurations. It also has a stub for user login via Telegram, Facebook and Google. Enjoy!
+# CommonCrypto backend
 
 ## Installation and local launch
 
-1. Clone this repo: `git clone https://github.com/backmeupplz/backend-starter`
-2. Launch the [mongo database](https://www.mongodb.com/) locally
-3. Create `.env` with the environment variables listed below
-4. Run `yarn` in the root folder
-5. Run `yarn develop`
+1. Clone this repo: `git clone https://github.com/Borodutch/commoncrypto-backend`
+2. Run `yarn` in the root folder
+3. Run `yarn develop`
 
 And you should be good to go! Feel free to fork and submit pull requests.
 
-## Environment variables
+# Continuous integration
 
-| Name                                     | Description                |
-| ---------------------------------------- | -------------------------- |
-| `MONGO`                                  | URL of the mongo database  |
-| `JWT`                                    | secret for JWT             |
-| `FACEBOOK_APP_ID`, `FACEBOOK_APP_SECRET` | Facebook login credentials |
-| `TELEGRAM_LOGIN_TOKEN`                   | Telegram login bot         |
+Any commit pushed to master gets deployed to [api.commoncrypto.dev](https://api.commoncrypto.dev) via [CI Ninja](https://github.com/backmeupplz/ci-ninja).
 
-Also, please, consider looking at `.env.sample`.
+# License
+
+MIT — use for any purpose. Would be great if you could leave a note about the original developers. Thanks!
