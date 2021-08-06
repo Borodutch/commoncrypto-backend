@@ -22,9 +22,9 @@ export const app = new Koa()
     app.use(
       ratelimit({
         duration: 1000,
-        max: 2,
+        max: 100,
         errorMessage:
-          'Too many requests, please try again later (limit is 2 requests per second)',
+          'Too many requests, please try again later (limit is 100 requests per second)',
         driver: 'memory',
         db,
       })
