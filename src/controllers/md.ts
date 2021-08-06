@@ -1,5 +1,4 @@
 import { Controller, Ctx, Get } from 'amala'
-
 import { Context } from 'koa'
 import { readFileSync } from 'fs'
 

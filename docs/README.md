@@ -8,3 +8,11 @@
 ### Get `/exchanges`
 
 Returns a list of all exchanges as an array of strings.
+
+### Get `/pairs/:exchange`
+
+Returns a list of all pairs for the given exchange as an array of strings.
+
+### Get `/ticker/:exchange/:pair`
+
+Returns the ticker for the given exchange and pair. Pair format is `CURRENCYCURRENCY` like `BTCUSD`.

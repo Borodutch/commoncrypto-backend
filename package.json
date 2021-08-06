@@ -25,6 +25,7 @@
   "dependencies": {
     "@types/koa-bodyparser": "^4.3.3",
     "amala": "^7.0.0",
+    "ccxt": "^1.54.58",
     "glob": "^7.1.7",
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.3.0",
