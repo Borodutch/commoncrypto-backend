@@ -29,6 +29,7 @@
     "glob": "^7.1.7",
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.3.0",
+    "koa-ratelimit": "^5.0.1",
     "koa-router": "^10.0.0",
     "module-alias": "^2.2.2",
     "showdown": "^1.9.1"
