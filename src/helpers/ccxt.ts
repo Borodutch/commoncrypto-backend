@@ -8,11 +8,6 @@ for (const exchange of ccxt.exchanges) {
     exchangesMap[exchange] = exchangeObject
   }
 }
-console.log(
-  `${Object.keys(exchangesMap).length} Exchanges initialized: ${Object.keys(
-    exchangesMap
-  ).join(', ')}`
-)
 
 export const tickers = {}
 const tickersRefreshLocks = {}
@@ -30,11 +25,10 @@ for (const exchange of Object.values(exchangesMap)) {
         const ticker = fetchedTickers[tickerKey]
         preparedTickers[ticker.symbol.replace('/', '')] = ticker
       }
-      console.log(Object.keys(preparedTickers))
       tickers[exchange.id] = preparedTickers
-      console.log(`Refreshed ${exchange.id} tickers`)
+      // console.log(`Refreshed ${exchange.id} tickers`)
     } catch (e) {
-      console.error(`Could not refresh ${exchange.id} tickers`)
+      // console.error(`Could not refresh ${exchange.id} tickers`)
     } finally {
       tickersRefreshLocks[exchange.id] = false
     }
